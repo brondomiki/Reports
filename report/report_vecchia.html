@@ -1,0 +1,70 @@
+<!DOCTYPE html><html lang='it'><head><meta charset='utf-8'>
+<title>Report Dosate — Vecchia</title>
+<style>body{font-family:Segoe UI,Arial,sans-serif;margin:24px;color:#222}
+table{border-collapse:collapse;margin:16px 0}
+th,td{border:1px solid #bbb;padding:6px 12px;text-align:right}
+th{background:#2c3e50;color:#fff}
+td:first-child,th:first-child{text-align:center}
+img{max-width:100%;border:1px solid #ddd;border-radius:6px;margin:8px 0 24px}
+.card h2{margin-bottom:4px}</style></head><body>
+<h1>Report Dosate — file <code>Vecchia.csv</code></h1>
+<p><b>Segmentazione:</b> inizio dosata alla riga col bit DosaggioInCorso=0, fine alla riga successiva (estesa alla riga precedente il bit=0 seguente); <b>l'inizio dei grafici corrisponde al primo dato di pesa dopo il bit di start</b>.</p>
+<p><b>Intervallo dati:</b> 25/09/2026 15:02:16 → 25/09/2026 15:17:59</p>
+<p><b>Numero dosate rilevate:</b> 9</p>
+<table><tr><th>#</th><th>Riga bit=0</th><th>Inizio grafico (1° dato)</th><th>Fine</th><th>Durata [s]</th><th>Pesa inizio [g]</th><th>Pesa max [g]</th><th>Dosato [g]</th><th>&Delta; Tlm_Dos8 [g]</th><th>Velocità media [g/s]</th><th>Punti</th></tr>
+<tr><td>1</td><td>15:02:54</td><td>15:04:10</td><td>15:04:38</td><td>28</td><td>0.1</td><td>1240.8</td><td>1240.7</td><td>1302.5</td><td>44.3</td><td>29</td></tr>
+<tr><td>2</td><td>15:04:39</td><td>15:05:01</td><td>15:05:37</td><td>36</td><td>-0.1</td><td>1245.4</td><td>1245.5</td><td>1325.4</td><td>34.6</td><td>37</td></tr>
+<tr><td>3</td><td>15:05:38</td><td>15:06:14</td><td>15:06:43</td><td>29</td><td>-0.1</td><td>1241.4</td><td>1241.5</td><td>1288.4</td><td>42.8</td><td>30</td></tr>
+<tr><td>4</td><td>15:06:44</td><td>15:07:50</td><td>15:08:18</td><td>28</td><td>0.1</td><td>1252.2</td><td>1252.1</td><td>1335.2</td><td>44.7</td><td>29</td></tr>
+<tr><td>5</td><td>15:08:19</td><td>15:08:54</td><td>15:09:31</td><td>37</td><td>0.3</td><td>1243.1</td><td>1242.8</td><td>1254.0</td><td>33.6</td><td>38</td></tr>
+<tr><td>6</td><td>15:09:32</td><td>15:12:10</td><td>15:12:38</td><td>28</td><td>1.1</td><td>1241.2</td><td>1240.1</td><td>1355.2</td><td>44.3</td><td>29</td></tr>
+<tr><td>7</td><td>15:12:39</td><td>15:15:29</td><td>15:15:59</td><td>30</td><td>-0.1</td><td>1255.2</td><td>1255.3</td><td>1324.2</td><td>41.8</td><td>31</td></tr>
+<tr><td>8</td><td>15:16:00</td><td>15:16:26</td><td>15:16:51</td><td>25</td><td>-0.1</td><td>1252.9</td><td>1253.0</td><td>1287.3</td><td>50.1</td><td>26</td></tr>
+<tr><td>9</td><td>15:16:52</td><td>15:17:18</td><td>15:17:58</td><td>40</td><td>0.1</td><td>1243.7</td><td>1243.6</td><td>1331.8</td><td>31.1</td><td>40</td></tr>
+</table>
+<div class='card'>
+<h2>Dosata #1</h2>
+<p>Riga bit DosaggioInCorso=0: <b>25/09/2026 15:02:54</b> — Inizio grafico (primo dato dopo il bit): <b>25/09/2026 15:04:10</b> — Fine: <b>25/09/2026 15:04:38</b> — Durata: <b>28 s</b><br>Pesa a inizio dosata: <b>0.1 g</b> — Pesa massima: <b>1240.8 g</b> — Dosato: <b>1240.7 g</b><br>Variazione contatore Tlm_Dos8_Eu: <b>1302.5 g</b> — Velocità media di dosaggio: <b>44.3 g/s</b></p>
+<img src='vecchia_01.png' alt='Grafico dosata 1'>
+</div>
+<div class='card'>
+<h2>Dosata #2</h2>
+<p>Riga bit DosaggioInCorso=0: <b>25/09/2026 15:04:39</b> — Inizio grafico (primo dato dopo il bit): <b>25/09/2026 15:05:01</b> — Fine: <b>25/09/2026 15:05:37</b> — Durata: <b>36 s</b><br>Pesa a inizio dosata: <b>-0.1 g</b> — Pesa massima: <b>1245.4 g</b> — Dosato: <b>1245.5 g</b><br>Variazione contatore Tlm_Dos8_Eu: <b>1325.4 g</b> — Velocità media di dosaggio: <b>34.6 g/s</b></p>
+<img src='vecchia_02.png' alt='Grafico dosata 2'>
+</div>
+<div class='card'>
+<h2>Dosata #3</h2>
+<p>Riga bit DosaggioInCorso=0: <b>25/09/2026 15:05:38</b> — Inizio grafico (primo dato dopo il bit): <b>25/09/2026 15:06:14</b> — Fine: <b>25/09/2026 15:06:43</b> — Durata: <b>29 s</b><br>Pesa a inizio dosata: <b>-0.1 g</b> — Pesa massima: <b>1241.4 g</b> — Dosato: <b>1241.5 g</b><br>Variazione contatore Tlm_Dos8_Eu: <b>1288.4 g</b> — Velocità media di dosaggio: <b>42.8 g/s</b></p>
+<img src='vecchia_03.png' alt='Grafico dosata 3'>
+</div>
+<div class='card'>
+<h2>Dosata #4</h2>
+<p>Riga bit DosaggioInCorso=0: <b>25/09/2026 15:06:44</b> — Inizio grafico (primo dato dopo il bit): <b>25/09/2026 15:07:50</b> — Fine: <b>25/09/2026 15:08:18</b> — Durata: <b>28 s</b><br>Pesa a inizio dosata: <b>0.1 g</b> — Pesa massima: <b>1252.2 g</b> — Dosato: <b>1252.1 g</b><br>Variazione contatore Tlm_Dos8_Eu: <b>1335.2 g</b> — Velocità media di dosaggio: <b>44.7 g/s</b></p>
+<img src='vecchia_04.png' alt='Grafico dosata 4'>
+</div>
+<div class='card'>
+<h2>Dosata #5</h2>
+<p>Riga bit DosaggioInCorso=0: <b>25/09/2026 15:08:19</b> — Inizio grafico (primo dato dopo il bit): <b>25/09/2026 15:08:54</b> — Fine: <b>25/09/2026 15:09:31</b> — Durata: <b>37 s</b><br>Pesa a inizio dosata: <b>0.3 g</b> — Pesa massima: <b>1243.1 g</b> — Dosato: <b>1242.8 g</b><br>Variazione contatore Tlm_Dos8_Eu: <b>1254.0 g</b> — Velocità media di dosaggio: <b>33.6 g/s</b></p>
+<img src='vecchia_05.png' alt='Grafico dosata 5'>
+</div>
+<div class='card'>
+<h2>Dosata #6</h2>
+<p>Riga bit DosaggioInCorso=0: <b>25/09/2026 15:09:32</b> — Inizio grafico (primo dato dopo il bit): <b>25/09/2026 15:12:10</b> — Fine: <b>25/09/2026 15:12:38</b> — Durata: <b>28 s</b><br>Pesa a inizio dosata: <b>1.1 g</b> — Pesa massima: <b>1241.2 g</b> — Dosato: <b>1240.1 g</b><br>Variazione contatore Tlm_Dos8_Eu: <b>1355.2 g</b> — Velocità media di dosaggio: <b>44.3 g/s</b></p>
+<img src='vecchia_06.png' alt='Grafico dosata 6'>
+</div>
+<div class='card'>
+<h2>Dosata #7</h2>
+<p>Riga bit DosaggioInCorso=0: <b>25/09/2026 15:12:39</b> — Inizio grafico (primo dato dopo il bit): <b>25/09/2026 15:15:29</b> — Fine: <b>25/09/2026 15:15:59</b> — Durata: <b>30 s</b><br>Pesa a inizio dosata: <b>-0.1 g</b> — Pesa massima: <b>1255.2 g</b> — Dosato: <b>1255.3 g</b><br>Variazione contatore Tlm_Dos8_Eu: <b>1324.2 g</b> — Velocità media di dosaggio: <b>41.8 g/s</b></p>
+<img src='vecchia_07.png' alt='Grafico dosata 7'>
+</div>
+<div class='card'>
+<h2>Dosata #8</h2>
+<p>Riga bit DosaggioInCorso=0: <b>25/09/2026 15:16:00</b> — Inizio grafico (primo dato dopo il bit): <b>25/09/2026 15:16:26</b> — Fine: <b>25/09/2026 15:16:51</b> — Durata: <b>25 s</b><br>Pesa a inizio dosata: <b>-0.1 g</b> — Pesa massima: <b>1252.9 g</b> — Dosato: <b>1253.0 g</b><br>Variazione contatore Tlm_Dos8_Eu: <b>1287.3 g</b> — Velocità media di dosaggio: <b>50.1 g/s</b></p>
+<img src='vecchia_08.png' alt='Grafico dosata 8'>
+</div>
+<div class='card'>
+<h2>Dosata #9</h2>
+<p>Riga bit DosaggioInCorso=0: <b>25/09/2026 15:16:52</b> — Inizio grafico (primo dato dopo il bit): <b>25/09/2026 15:17:18</b> — Fine: <b>25/09/2026 15:17:58</b> — Durata: <b>40 s</b><br>Pesa a inizio dosata: <b>0.1 g</b> — Pesa massima: <b>1243.7 g</b> — Dosato: <b>1243.6 g</b><br>Variazione contatore Tlm_Dos8_Eu: <b>1331.8 g</b> — Velocità media di dosaggio: <b>31.1 g/s</b></p>
+<img src='vecchia_09.png' alt='Grafico dosata 9'>
+</div>
+</body></html>
